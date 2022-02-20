@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup> <!-- Generic properties -->
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup> <!-- Properties geared towards NuGet -->
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>Describe what this package does and what it's for.</Description>
+        <Version>1.0.0</Version>
+        <PackageReleaseNotes>Initial release. Update this for every bump to Version above.</PackageReleaseNotes>
+        <Authors>Your Name Here</Authors>
+        <Company>Your Company Here</Company>
+        <PackageTags>space delimited set of tags for your package</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/UserName/RepoName</PackageProjectUrl>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <!-- Source Link configuration -->
+    <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+    </ItemGroup>
+</Project>

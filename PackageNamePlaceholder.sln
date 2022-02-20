@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{DE313155-7C59-4DE3-AC16-FE8E6C4E2249}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{241550CB-1ED6-45CD-B81B-592F517605D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{947A12B7-E1A2-4107-9E67-390C34825258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageNamePlaceholder", "src\PackageNamePlaceholder.csproj", "{5418D459-43AC-4D28-9D80-C6B3249F7F2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5418D459-43AC-4D28-9D80-C6B3249F7F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5418D459-43AC-4D28-9D80-C6B3249F7F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5418D459-43AC-4D28-9D80-C6B3249F7F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5418D459-43AC-4D28-9D80-C6B3249F7F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5418D459-43AC-4D28-9D80-C6B3249F7F2F} = {241550CB-1ED6-45CD-B81B-592F517605D4}
+	EndGlobalSection
+EndGlobal
