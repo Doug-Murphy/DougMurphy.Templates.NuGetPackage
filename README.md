@@ -7,6 +7,10 @@ Creating a NuGet package is easy. Creating a NuGet package with all of the prope
 There are many things that you must remember to do, and not all of them are obvious or easy to discover.
 This template aims to solve that problem by providing an extremely simple way to create a NuGet package that includes all of the best practice recommendations by Microsoft out of the box for you!
 
+## What is scaffolded?
+
+As mentioned above, many of the best practices are already in place for you. These include things like making sure XML documentation files are generated, the readme.md file is included in your NuGet package, SourceLink is configured for GitHub hosting, and many more things. To see the entire set of things included, view the [templated .csproj file](template/src/PackageNamePlaceholder.csproj).
+
 # Installation and Usage
 
 Installing dotnet templates is easy! Just run the following command in your terminal: `dotnet new -i DougMurphy.Templates.NuGetPackage`
