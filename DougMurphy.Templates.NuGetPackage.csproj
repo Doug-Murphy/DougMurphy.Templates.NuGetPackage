@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <!-- NuGet properties -->
+        <PackageType>Template</PackageType>
+        <Description>A template for creating a new NuGet package that is already configured with many recommendations by Microsoft.</Description>
+        <Version>1.0.0</Version>
+        <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+        <Authors>Doug Murphy</Authors>
+        <PackageTags>nuget template scaffold</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/Doug-Murphy/DougMurphy.Templates.NuGetPackage</PackageProjectUrl>
+
+        <!-- Template properties -->
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+
+        <TargetFramework>net6.0</TargetFramework> <!-- Not used, but required -->
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+        
+        <!-- Template properties -->
+        <Content Include="template\**\*" Exclude="template\**\bin\**;template\**\obj\**" />
+        <Compile Remove="**\*"/>
+    </ItemGroup>
+    
+</Project>
