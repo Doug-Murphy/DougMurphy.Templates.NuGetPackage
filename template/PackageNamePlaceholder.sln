@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{241550CB-1ED6-45CD-B81B-592F517605D4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{947A12B7-E1A2-4107-9E67-390C34825258}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageNamePlaceholder", "src\PackageNamePlaceholder.csproj", "{5418D459-43AC-4D28-9D80-C6B3249F7F2F}"
 EndProject
 Global
